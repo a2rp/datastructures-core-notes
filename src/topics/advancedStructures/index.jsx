@@ -11,7 +11,7 @@ import {
 } from "react-icons/fi";
 
 const AdvancedStructures = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     return (
         <Styled.Wrapper>
