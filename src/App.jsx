@@ -12,7 +12,7 @@ import Graphs from "./topics/graphs";
 import AdvancedStructures from "./topics/advancedStructures";
 import AlgorithmicPatterns from "./topics/algorithmicPatterns";
 import ComplexityMaster from "./topics/complexityMaster";
-import { FiActivity, FiBookOpen, FiGitBranch, FiGrid, FiLayers, FiList, FiShare2, FiZap } from "react-icons/fi";
+import { FiActivity, FiArrowUp, FiBookOpen, FiGitBranch, FiGrid, FiLayers, FiList, FiShare2, FiZap } from "react-icons/fi";
 
 const App = () => {
     const mainRef = useRef(null);
@@ -51,6 +51,9 @@ const App = () => {
                     <Footer />
                 </div>
             </Styled.Main>
+            <button className="scrollTopButton" type="button" onClick={() => mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "smooth" })} aria-label="Scroll main content to top" title="Scroll to top">
+                <FiArrowUp />
+            </button>
         </Styled.Wrapper>
     );
 };
