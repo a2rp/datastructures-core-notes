@@ -9,8 +9,10 @@ export const Styled = {
         padding: 0 16px;
         border-bottom: 1px solid var(--color-border);
         background: var(--color-bg);
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        right: 0;
         z-index: 50;
         height: 60px;
     `,

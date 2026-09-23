@@ -8,7 +8,8 @@ export const Styled = {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        .scrollTopButton { position: fixed; right: 22px; bottom: 22px; z-index: 10; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; color: #fff; background: var(--color-primary); box-shadow: 0 10px 28px var(--color-shadow); transition: transform .16s ease, background .16s ease; }
+        .scrollTopButton { position: fixed; right: 22px; bottom: 22px; z-index: 10; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--color-border); border-radius: 14px; color: #fff; background: var(--color-primary); box-shadow: 0 10px 28px var(--color-shadow); opacity: 0; pointer-events: none; transform: translateY(10px); transition: opacity .16s ease, transform .16s ease, background .16s ease, box-shadow .16s ease; }
+        .scrollTopButton.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
         .scrollTopButton:hover { transform: translateY(-2px); background: var(--color-primary-hover); }
         .scrollTopButton svg { font-size: 18px; }
     `,

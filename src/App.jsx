@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Styled } from "./App.styled";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -17,9 +17,25 @@ import { FiActivity, FiArrowUp, FiBookOpen, FiGitBranch, FiGrid, FiLayers, FiLis
 const App = () => {
     const mainRef = useRef(null);
     const [activeTopic, setActiveTopic] = useState("overview");
+    const [showTopButton, setShowTopButton] = useState(false);
     const items = [["overview", "Overview", <FiBookOpen />], ["foundations", "Foundations", <FiLayers />], ["linearDataStructures", "Linear structures", <FiList />], ["hashBasedStructures", "Hash tables", <FiGrid />], ["trees", "Trees", <FiGitBranch />], ["graphs", "Graphs", <FiShare2 />], ["advancedStructures", "Advanced structures", <FiZap />], ["algorithmicPatterns", "Algorithmic patterns", <FiActivity />], ["complexityMaster", "Complexity guide", <FiLayers />]];
     const selectTopic = (key) => {
         setActiveTopic(key);
+        mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    };
+
+    useEffect(() => {
+        const main = mainRef.current;
+        if (!main) return undefined;
+
+        const handleScroll = () => setShowTopButton(main.scrollTop > 350);
+        main.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
+
+        return () => main.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
         mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     };
 
@@ -51,7 +67,7 @@ const App = () => {
                     <Footer />
                 </div>
             </Styled.Main>
-            <button className="scrollTopButton" type="button" onClick={() => mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "smooth" })} aria-label="Scroll main content to top" title="Scroll to top">
+            <button className={"scrollTopButton " + (showTopButton ? "show" : "")} type="button" onClick={scrollToTop} aria-label="Scroll main content to top" title="Scroll to top">
                 <FiArrowUp />
             </button>
         </Styled.Wrapper>

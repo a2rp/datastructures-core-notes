@@ -1,126 +1,24 @@
 # Data Structures Core Notes
 
-A single-page, at-a-glance revision project for core data structures and algorithmic thinking.
+A single-page revision guide for data structures and algorithmic thinking, covering complexity, linear structures, hash tables, trees, graphs, and practical patterns.
 
-This project is designed as a fast reference and structured summary sheet covering essential data structure concepts without unnecessary depth.  
-It focuses on clarity, time and space trade-offs, real-world usage, and interview-ready fundamentals.
+![Data Structures Core Notes screenshot](screenshot.png)
 
----
+## Features
 
-![alt text](image.png)
+- Topic-based study guide for core data structure concepts
+- Complexity, trade-off, and implementation-focused notes
+- Coverage of arrays, lists, stacks, queues, hash tables, trees, graphs, tries, and union-find
+- Dark and light themes with persistent preference
+- Responsive fixed study navigation and scroll-aware go-to-top control
 
----
+## Tech stack
 
-## Purpose
+React, Vite, styled-components, React Icons, and CSS.
 
-- Quick revision before interviews
-- Rapid recall of core data structures and patterns
-- Strong mental model of time complexity and space complexity
-- Practical, decision-driven reminders for choosing the right structure
-- Clear implementations mindset (primary C++ focus, concept-first notes)
+## Run locally
 
-## Coverage
-
-### Foundations
-
-- What is a data structure
-- Abstract Data Type (ADT) vs data structure
-- Time complexity and Big O
-- Space complexity
-- Worst-case vs average-case thinking
-- Amortized analysis basics
-- Common trade-offs (speed vs memory)
-
-### Linear Data Structures
-
-- Arrays (static vs dynamic)
-- Vectors and resizing concept
-- Linked list (singly, doubly, circular)
-- Stack
-- Queue
-- Deque
-
-### Hash Based Structures
-
-- Hash table fundamentals
-- Hash functions and collisions
-- Collision resolution (chaining, open addressing concepts)
-- Load factor and rehashing
-- Set vs Map
-
-### Trees
-
-- Tree basics and terminology
-- Binary tree
-- Binary search tree
-- Traversals (DFS, BFS)
-- Balanced tree concept (intro)
-- Heap (min heap, max heap)
-- Priority queue
-
-### Graphs
-
-- Graph fundamentals
-- Directed vs undirected
-- Weighted vs unweighted
-- Graph representations (adjacency list, adjacency matrix)
-- BFS and DFS
-- Cycle detection concept
-- Topological sort concept
-- Shortest path idea (intro)
-
-### Advanced Structures
-
-- Trie
-- Disjoint set (Union Find)
-- Segment tree (concept level)
-- Fenwick tree (intro level)
-
-### Algorithmic Patterns
-
-- Two pointers
-- Sliding window
-- Fast and slow pointers
-- Binary search pattern
-- Divide and conquer concept
-- Recursion basics and stack cost
-- Backtracking concept
-- Greedy basics
-- Dynamic programming intro
-
-### Complexity Master Section
-
-- Time vs space trade-offs
-- Cache locality intuition
-- Worst case traps and when Big O lies
-- Common performance mistakes
-
-## Tech Stack
-
-- React
-- Vite
-- styled-components
-
-## Project Type
-
-Single page only  
-Section-based navigation  
-Searchable and expandable content  
-No blog-style content, only structured notes
-
-Each section is modular and collapsible for fast scanning.
-
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-## Goal
-
-Complete data structures fundamentals in one scrollable page.
-No fluff. No repetition. Just essentials.
+Run npm install, then npm run dev. Use npm run build to create a production build and npm run deploy to publish it to GitHub Pages.
 
 ## Links
 
@@ -135,24 +33,5 @@ No fluff. No repetition. Just essentials.
 ## Support
 
 - Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me A Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
-<!-- Project links -->
-
-## Links
-
-- Live: [https://a2rp.github.io/datastructures-core-notes/](https://a2rp.github.io/datastructures-core-notes/)
-- Repository: [https://github.com/a2rp/datastructures-core-notes](https://github.com/a2rp/datastructures-core-notes)
-- Portfolio: [https://www.ashishranjan.net/](https://www.ashishranjan.net/)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
-
-## Support
-
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
 - Buy Me a Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://www.patreon.com/a2rp](https://www.patreon.com/a2rp)
+- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
