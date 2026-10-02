@@ -2,7 +2,7 @@
 
 A single-page revision guide for data structures and algorithmic thinking, covering complexity, linear structures, hash tables, trees, graphs, and practical patterns.
 
-![Data Structures Core Notes screenshot](screenshot.png)
+![Data Structures Core Notes screenshot](./screenshot.jpg)
 
 ## Features
 
