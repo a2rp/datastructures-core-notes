@@ -16,7 +16,18 @@ const HashBasedStructures = () => {
     return (
         <Styled.Wrapper>
             <Styled.Container className={open ? "open" : ""}>
-                <Styled.Header onClick={() => setOpen(!open)}>
+                <Styled.Header
+                    role="button"
+                    tabIndex={0}
+                    aria-expanded={open}
+                    onClick={() => setOpen((value) => !value)}
+                    onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            setOpen((value) => !value);
+                        }
+                    }}
+                >
                     <div className="left">
                         <div className="icon">
                             <FiDatabase />

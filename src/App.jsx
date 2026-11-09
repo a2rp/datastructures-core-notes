@@ -47,7 +47,7 @@ const App = () => {
             <Styled.Main ref={mainRef}>
                 <aside className="studyNav" aria-label="Data structures topics">
                     <div className="studyNavLabel">Study guide</div>
-                    <nav>{items.map(([key, label, icon]) => <button key={key} type="button" className={activeTopic === key ? "active" : ""} onClick={() => selectTopic(key)}>{icon}<span>{label}</span></button>)}</nav>
+                    <nav>{items.map(([key, label, icon]) => <button key={key} type="button" className={activeTopic === key ? "active" : ""} aria-pressed={activeTopic === key} onClick={() => selectTopic(key)}>{icon}<span>{label}</span></button>)}</nav>
                     <p>Select a topic to open its notes.</p>
                 </aside>
                 <div className="contentWrapper">
