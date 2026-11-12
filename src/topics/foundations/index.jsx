@@ -125,11 +125,13 @@ int arr[n];`}</pre>
                                     <h3>Big O, Omega, Theta</h3>
                                 </div>
                                 <p>
-                                    Big O → worst case Big Omega → best case Big
-                                    Theta → tight bound
+                                    Big O describes an asymptotic upper bound.
+                                    Big Omega describes a lower bound. Big Theta
+                                    describes a tight bound.
                                 </p>
                                 <p className="mini">
-                                    Always analyze worst case unless specified.
+                                    Worst, average, and best case are separate
+                                    analyses; each can use these bounds.
                                 </p>
                             </div>
 
